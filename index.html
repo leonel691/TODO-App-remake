@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>TODO App</title>
 </head>
-<body class="w-[100vw] h-[100%] box-border overflow-x-hidden">
+<body class="w-[100vw] h-[100%] bg-[white] box-border overflow-x-hidden">
     <div class="w-[100vw] h-[20rem] 2xl:h-[31rem] bg-[url(assets/img/herosection.svg)] bg-cover bg-no-repeat bg-center">
         <div class="w-full h-full bg-gradient-to-br from-[#5596FF] to-[#AC2DEB] opacity-[0.7] ">
         </div>
@@ -23,26 +23,25 @@
         <div class="w-[32.8rem] 2xl:w-[54rem] h-[4rem] 2xl:h-[6.4rem] bg-[white] rounded-[0.5rem] mt-[2rem] flex items-center gap-[1.2rem] justify-start px-[2rem] 2xl:px-[2.4rem]">
             <div class="bg-[gray] w-[3rem] h-[3rem] rounded-[50%] hover:bg-gradient-to-br from-[#5596FF] to-[#AC2DEB] flex justify-center items-center">
                 <div class="bg-[white] w-[2.8rem] h-[2.8rem] rounded-[50%] flex justify-center items-center">
-                    <img class="size-[2.6rem] opacity-[0]" src="assets/img/check.svg" alt="coché">
+                    <img class="size-[2.6rem] opacity-[0]" src="assets/img/check.svg" alt="coché" id="input_image">
                 </div>
             </div>
-            <input class="text-[1.2rem] text-[#393A4B] 2xl:text-[1.8rem] 2xl:w-[85%] font-[400] outline-none w-[75%]" type="text" placeholder="Create a new todo…">
+            <input class="text-[1.2rem] text-[#393A4B] 2xl:text-[1.8rem] 2xl:w-[85%] font-[400] outline-none w-[75%]" type="text" placeholder="Create a new todo…" id="input">
         </div>
         <div class="w-[32.8rem] 2xl:w-[54rem] h-[auto] max-h-[36.8rem] first:rounded-t-[0.5rem] last:rounded-b-[0.5rem] overflow-y-scroll bg-[white] rounded-[0.5rem] shadow-2xl">
             <!-- bloc contenant la tache ajouté -->
-            <div class="w-full h-[4rem] 2xl:h-[6.4rem] px-[2rem] 2xl:px-[2.4rem] flex items-center justify-between">
+            <div class="w-full h-[4.3rem] 2xl:h-[6.7rem] px-[2rem] 2xl:px-[2.4rem] max-2xl:border-b-2 border-b-3 border-[#9495A5] hover:border-[#AC2DEB] flex items-center justify-between">
                 <div class="flex gap-[1.2rem] items-center">
                     <div class="bg-[gray] w-[3rem] h-[3rem] rounded-[50%] hover:bg-gradient-to-br from-[#5596FF] to-[#AC2DEB] flex justify-center items-center">
                         <div class="bg-[white] w-[2.8rem] h-[2.8rem] rounded-[50%] flex justify-center items-center">
-                        <img class="size-[2.6rem] 2xl:size-[2.7     rem] opacity-[1]" src="assets/img/check.svg" alt="coché">
+                        <img class="size-[2.6rem] 2xl:size-[2.7rem] opacity-[0]" src="assets/img/check.svg" alt="coché">
                         </div>
                     </div>
                     <span class="text-[1.2rem] 2xl:text-[1.8rem] font-[400] text-[#494C6B] overflow-x-scroll max-w-[75%]">nouvelle tache</span>
                 </div>  
-                <img src="assets/img/cross.svg" alt="delete">  
+                <!-- <img src="assets/img/cross.svg" alt="delete">   -->
+                <img class="size-[2rem] 2xl:size-[3rem] hover:hidden" src="assets/img/delete.svg" alt="delete"> 
             </div>
-            <!-- ligne de separation pour chaque tache -->
-            <div class="bg-[#9495A5] w-full h-[0.2rem]"></div>
             <div class="w-[full] h-[4rem] 2xl:h-[6.4rem] bg-[white] font-[400] text-[1.2rem] 2xl-[1.4rem] text-[#9495A5] flex items-center justify-between px-[2rem] 2xl:px-[2.4rem]">
                 <span>5 items left</span>
                 <div class="flex items-center shadow-2xl justify-center gap-[2rem] hidden 2xl:flex">
@@ -62,5 +61,6 @@
     <p class="text-[1.4rem] font-[400] text-[#9495A5] text-center">
         Drag and drop to reorder list
     </p>
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
